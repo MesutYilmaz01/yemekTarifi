@@ -8,15 +8,49 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            font-weight: bold;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style=" width:700px; margin-left:300px; background-color:#CCCCFF; height: 150px;"></div>
+        <div style=" width:700px; margin-left:300px; background-color:#ce7171; height: 150px;"></div>
         <div style="margin-left:300px; width:700px; height:20px;"> </div>
-        <div style="margin-left:300px; width:700px; height:20px; background-color:#CCFFFF;"></div>
+        <div style="margin-left:300px; width:700px; height:25px; background-color:#ce7171;">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"><a href="Anasayfa.aspx">ANASAYFA</a></td>
+                    <td class="auto-style2"><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style2"><a href="TarifOner.aspx">TARİF ÖNER</a></td>
+                    <td class="auto-style2"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style2"><a href="İletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
         <div style="margin-left:300px; width:700px; height:20px;"></div>
-        <div style="margin-left:300px; width:200px; height:200px; background-color:#CCFFCC;">
-            <div style="margin-left:250px; width:450px; height:450px; background-color:#FFFFCC;">
+        <div style="margin-left:300px; width:700px; height:300px;">
+            <div style="float:left; width:200px; height:200px; background-color:#ce7171;">        
+                <asp:DataList ID="DataList1" runat="server">
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:DataList>
+            </div>
+            <div style="float:right; width:450px; height:450px; background-color:#ce7171;">
             
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
