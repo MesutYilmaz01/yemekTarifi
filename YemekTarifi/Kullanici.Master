@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="YemekTarifi.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="150px; width:700px; margin-left:300px; background-color:#CCCCFF;"></div>
+        <div style="300px; width:700px; height:20px;"> </div>
+        <div style="300px; width:700px; height:20px; background-color:#CCFFFF;"></div>
+        <div style="300px; width:700px; height:20px;"></div>
+        <div style="300px; width:200px; height:200px; background-color:#CCFFCC;"></div>
+        <div style="250px; width:350px; height:450px; background-color:#FFFFCC;">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>
