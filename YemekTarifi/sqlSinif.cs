@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 namespace YemekTarifi
 {
     public class sqlSinif
     {
-        public SqlConnection baglanti() {
-            SqlConnection baglan = new SqlConnection("Server=localhost;Uid=root;Pwd=;Database=dbo_yemektarifi;");
+        public MySqlConnection baglanti() {
+            MySqlConnection baglan = new MySqlConnection("Server=localhost;Database=dbo_yemektarifi;User=root;Password=;");
             baglan.Open();
             return baglan;
         }
