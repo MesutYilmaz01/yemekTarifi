@@ -6,6 +6,7 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -15,7 +16,8 @@
         .auto-style2 {
             font-weight: bold;
             text-align: center;
-            background-color: #FFFFFF;
+            background-color: #eea4a4;
+            height: 33px;
         }
         .auto-style3 {
             font-size: large;
@@ -29,7 +31,7 @@
     <form id="form1" runat="server">
         <div style=" width:700px; margin-left:300px; background-color:#ce7171; height: 150px;"></div>
         <div style="margin-left:300px; width:700px; height:20px;"> </div>
-        <div style="margin-left:300px; width:700px; height:25px; background-color:#ce7171;">
+        <div style="margin-left:300px; width:700px; height:40px; background-color:#fff;">
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style2"><a href="Anasayfa.aspx">ANASAYFA</a></td>

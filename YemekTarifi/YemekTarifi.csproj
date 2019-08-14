@@ -105,6 +105,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
     <Content Include="Resimler\mucver.jpg" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Tasarım.css" />
     <Content Include="Web.config" />

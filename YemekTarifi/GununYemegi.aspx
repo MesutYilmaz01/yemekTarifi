@@ -36,12 +36,15 @@
                     </td>
                 </tr>
                 <tr>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+                <tr>
                     <td class="auto-style5"><strong>Puan</strong> :
                         <asp:Label ID="Label6" runat="server" Text='<%# Eval("GununYemegiPuan") %>'></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style5"><strong>Tarih</strong> :
+                    <td class="auto-style5"><strong>Eklenme</strong> <strong>Tarihi</strong> :
                         <asp:Label ID="Label7" runat="server" Text='<%# Eval("GununYemegiTarih") %>'></asp:Label>
                     </td>
                 </tr>

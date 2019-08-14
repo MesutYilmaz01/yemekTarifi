@@ -13,5 +13,10 @@ namespace YemekTarifi
         {
 
         }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
