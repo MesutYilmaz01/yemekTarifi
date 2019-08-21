@@ -25,11 +25,16 @@
         .auto-style4 {
             text-align: center;
         }
+        .auto-style5 {
+            margin-bottom: 5px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style=" width:700px; margin-left:300px; background-color:#ce7171; height: 150px;"></div>
+        <div style=" width:700px; margin-left:300px; background-color:#ce7171; height: 150px;">
+            <asp:Image ID="Image1" runat="server" CssClass="auto-style5" Height="152px" ImageUrl="~/Header/head1.jpg" Width="701px" />
+        </div>
         <div style="margin-left:300px; width:700px; height:20px;"> </div>
         <div style="margin-left:300px; width:700px; height:40px; background-color:#fff;">
             <table class="auto-style1">
@@ -60,8 +65,8 @@
                 <asp:DataList ID="DataList1" runat="server" Height="137px" Width="199px">
                     <ItemTemplate>
                         <div style="border: thin solid #CCCCCC">
-                            <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
-                            (
+                           <a href="KategoriDetay.aspx?KategoriId=<%# Eval("KategoriId") %>"> <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                           </a> (
                             <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                             )</div>
                     </ItemTemplate>

@@ -8,21 +8,19 @@ using MySql.Data;
 using MySql.Data.MySqlClient;
 namespace YemekTarifi
 {
-    public partial class Hakkimizda : System.Web.UI.Page
+    public partial class KategoriDetay : System.Web.UI.Page
     {
         sqlSinif bgl = new sqlSinif();
+        string kategoriid = "";
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            MySqlCommand komut = new MySqlCommand("select * from hakkimizda", bgl.baglanti());
-            MySqlDataReader dr =  komut.ExecuteReader();
+            kategoriid = Request.QueryString["KategoriId"];
+            MySqlCommand komut = new MySqlCommand("select * from yemek where KategoriId=@p1",bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", kategoriid);
+            MySqlDataReader dr = komut.ExecuteReader();
             DataList2.DataSource = dr;
             DataList2.DataBind();
-            bgl.baglanti().Close();
-        }
-
-        protected void DataList2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

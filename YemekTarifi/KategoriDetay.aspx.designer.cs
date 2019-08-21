@@ -10,7 +10,7 @@
 namespace YemekTarifi {
     
     
-    public partial class Hakkimizda {
+    public partial class KategoriDetay {
         
         /// <summary>
         /// DataList2 denetimi.
@@ -20,14 +20,5 @@ namespace YemekTarifi {
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DataList DataList2;
-        
-        /// <summary>
-        /// Image1 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
     }
 }
