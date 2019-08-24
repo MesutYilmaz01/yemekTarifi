@@ -10,7 +10,7 @@
 namespace YemekTarifi {
     
     
-    public partial class Kategoriler {
+    public partial class Yorumlar {
         
         /// <summary>
         /// Panel1 denetimi.
@@ -94,30 +94,12 @@ namespace YemekTarifi {
         protected global::System.Web.UI.WebControls.Panel Panel4;
         
         /// <summary>
-        /// TextBox1 denetimi.
+        /// DataList2 denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-        
-        /// <summary>
-        /// FileUpload1 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-        
-        /// <summary>
-        /// Button5 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button5;
+        protected global::System.Web.UI.WebControls.DataList DataList2;
     }
 }

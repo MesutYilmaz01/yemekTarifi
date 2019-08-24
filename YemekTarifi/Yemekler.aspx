@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Kategoriler.aspx.cs" Inherits="YemekTarifi.Kategoriler" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="Yemekler.aspx.cs" Inherits="YemekTarifi.Yemekler" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
     .auto-style7 {
@@ -31,12 +31,12 @@
         <table class="auto-style6">
             <tr>
                 <td class="auto-style12"><strong>
-                    <asp:Button ID="Button1" runat="server" CssClass="auto-style11" Height="30px" OnClick="Button1_Click" Text="+" Width="30px" />
+                    <asp:Button ID="Button1" runat="server" CssClass="auto-style11" Height="30px" Text="+" Width="30px" OnClick="Button1_Click" />
                     </strong></td>
                 <td class="auto-style13"><strong>
-                    <asp:Button ID="Button2" runat="server" CssClass="auto-style11" Height="30px" OnClick="Button2_Click" Text="-" Width="30px" />
+                    <asp:Button ID="Button2" runat="server" CssClass="auto-style11" Height="30px" Text="-" Width="30px" OnClick="Button2_Click" />
                     </strong></td>
-                <td>KATEGORİ LİSTESİ</td>
+                <td>YEMEK LİSTESİ</td>
             </tr>
         </table>
     </asp:Panel>
@@ -46,14 +46,14 @@
             <table class="auto-style6">
                 <tr>
                     <td class="auto-style8">
-                        <asp:Label ID="Label1" runat="server" CssClass="auto-style10" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                        <asp:Label ID="Label1" runat="server" CssClass="auto-style10" Text='<%# Eval("YemekAd") %>'></asp:Label>
                     </td>
                     <td class="auto-style9">
-                        <a href ="Kategoriler.aspx?KategoriId=<%# Eval("KategoriId") %>&islem=sil"> <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Ikonlar/delete-icon-png-17.jpg" Width="30px" />
+                        <a href ="Yemekler.aspx?YemekId=<%# Eval("YemekId") %>&islem=sil"> <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Ikonlar/delete-icon-png-17.jpg" Width="30px" />
                         </a>
                     </td>
                     <td class="auto-style9">
-                       <a href ="KategoriAdminDetay.aspx?KategoriId=<%# Eval("KategoriId") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/Ikonlar/kisspng-computer-icons-refresh-free-download-clip-art-one-button-reload-5b282ade8d1bf6.251990151529359070578.png" Width="30px" />
+                       <a href ="YemekDuzenle.aspx?YemekId=<%# Eval("YemekId") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/Ikonlar/kisspng-computer-icons-refresh-free-download-clip-art-one-button-reload-5b282ade8d1bf6.251990151529359070578.png" Width="30px" />
                         </a>                  
                     </td>
                 </tr>
@@ -70,7 +70,7 @@
                 <td class="auto-style13"><strong>
                     <asp:Button ID="Button4" runat="server" CssClass="auto-style11" Height="30px" Text="-" Width="30px" OnClick="Button4_Click" />
                     </strong></td>
-                <td>KATEGORİ EKLEME</td>
+                <td>YEMEK EKLEME</td>
             </tr>
         </table>
     </asp:Panel>
@@ -81,21 +81,34 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>Kategori Ad :</td>
+                <td>Yemek Ad :</td>
                 <td>
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td>Kategori İkon:</td>
+                <td>Malzemeler:</td>
                 <td>
-                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    <asp:TextBox ID="TextBox2" runat="server" Height="100px" TextMode="MultiLine" Width="200px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Yemek Tarifi:</td>
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server" Height="200px" TextMode="MultiLine" Width="200px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td>Kategori:</td>
+                <td>
+                    <asp:DropDownList ID="DropDownList1" runat="server" Width="200px">
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button5" runat="server" Text="Ekle" OnClick="Button5_Click" style="height: 26px" />
+                    <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" style="height: 26px" Text="Ekle" />
                 </td>
             </tr>
         </table>

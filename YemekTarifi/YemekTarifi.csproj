@@ -110,6 +110,7 @@
     <Content Include="Header\login.jpg" />
     <Content Include="Ikonlar\delete-icon-png-17.jpg" />
     <Content Include="Ikonlar\kisspng-computer-icons-refresh-free-download-clip-art-one-button-reload-5b282ade8d1bf6.251990151529359070578.png" />
+    <Content Include="KategoriAdminDetay.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kategoriler.aspx" />
     <Content Include="Resimler\blog-img.jpg" />
@@ -119,6 +120,10 @@
     <Content Include="Tasarım.css" />
     <Content Include="Web.config" />
     <Content Include="YemekDetay.aspx" />
+    <Content Include="YemekDuzenle.aspx" />
+    <Content Include="Yemekler.aspx" />
+    <Content Include="YorumDetay.aspx" />
+    <Content Include="Yorumlar.aspx" />
     <Content Include="İletisim.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -157,6 +162,13 @@
     <Compile Include="Hakkimizda.aspx.designer.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="KategoriAdminDetay.aspx.cs">
+      <DependentUpon>KategoriAdminDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriAdminDetay.aspx.designer.cs">
+      <DependentUpon>KategoriAdminDetay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="KategoriDetay.aspx.cs">
       <DependentUpon>KategoriDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -193,6 +205,34 @@
     </Compile>
     <Compile Include="YemekDetay.aspx.designer.cs">
       <DependentUpon>YemekDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YemekDuzenle.aspx.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YemekDuzenle.aspx.designer.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yemekler.aspx.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yemekler.aspx.designer.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YorumDetay.aspx.cs">
+      <DependentUpon>YorumDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YorumDetay.aspx.designer.cs">
+      <DependentUpon>YorumDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yorumlar.aspx.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yorumlar.aspx.designer.cs">
+      <DependentUpon>Yorumlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="İletisim.aspx.cs">
       <DependentUpon>İletisim.aspx</DependentUpon>
