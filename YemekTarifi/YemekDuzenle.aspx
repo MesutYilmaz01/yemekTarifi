@@ -28,7 +28,7 @@
         <tr>
             <td>Kategori:</td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                 </asp:DropDownList>
             </td>
         </tr>
@@ -36,6 +36,12 @@
             <td>&nbsp;</td>
             <td>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Güncelle" />
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>
+                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Günün Yemeği Seç" />
             </td>
         </tr>
     </table>

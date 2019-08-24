@@ -14,7 +14,7 @@ namespace YemekTarifi
         sqlSinif bgl = new sqlSinif();
         protected void Page_Load(object sender, EventArgs e)
         {
-            MySqlCommand komut = new MySqlCommand("Select * from gununyemegi",bgl.baglanti());
+            MySqlCommand komut = new MySqlCommand("Select * from yemek where durum=1",bgl.baglanti());
             MySqlDataReader oku = komut.ExecuteReader();
             DataList2.DataSource = oku;
             DataList2.DataBind();
