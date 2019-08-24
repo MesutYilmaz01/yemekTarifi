@@ -113,6 +113,7 @@
     <Content Include="KategoriAdminDetay.aspx" />
     <Content Include="KategoriDetay.aspx" />
     <Content Include="Kategoriler.aspx" />
+    <Content Include="Mesajlar.aspx" />
     <Content Include="Resimler\blog-img.jpg" />
     <Content Include="Resimler\mucver.jpg" />
     <Content Include="StyleSheet1.css" />
@@ -189,6 +190,13 @@
     </Compile>
     <Compile Include="Kullanici.Master.designer.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mesajlar.aspx.designer.cs">
+      <DependentUpon>Mesajlar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlSinif.cs" />
