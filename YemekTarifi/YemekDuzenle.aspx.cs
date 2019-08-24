@@ -43,12 +43,14 @@ namespace YemekTarifi
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            MySqlCommand komut = new MySqlCommand("update yemek set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,KategoriId=@p4 where YemekId=@p5",bgl.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/resimler/" + FileUpload1.FileName));
+            MySqlCommand komut = new MySqlCommand("update yemek set YemekAd=@p1,YemekMalzeme=@p2,YemekTarif=@p3,KategoriId=@p4,YemekResim=@p6 where YemekId=@p5",bgl.baglanti());
             komut.Parameters.AddWithValue("@p1",TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut.Parameters.AddWithValue("@p3", TextBox3.Text);
             komut.Parameters.AddWithValue("@p4", DropDownList1.SelectedValue);
             komut.Parameters.AddWithValue("@p5", id);
+            komut.Parameters.AddWithValue("p6","~/resimler/"+FileUpload1.FileName);
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
         }

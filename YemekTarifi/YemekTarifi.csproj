@@ -106,6 +106,7 @@
     <Content Include="GununYemegi.aspx" />
     <Content Include="GununYemegiAdmin.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="HakkimizdaDetay.aspx" />
     <Content Include="Header\head1.jpg" />
     <Content Include="Header\head2.jpg" />
     <Content Include="Header\login.jpg" />
@@ -173,6 +174,13 @@
     </Compile>
     <Compile Include="Hakkimizda.aspx.designer.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HakkimizdaDetay.aspx.cs">
+      <DependentUpon>HakkimizdaDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HakkimizdaDetay.aspx.designer.cs">
+      <DependentUpon>HakkimizdaDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="KategoriAdminDetay.aspx.cs">
       <DependentUpon>KategoriAdminDetay.aspx</DependentUpon>

@@ -32,7 +32,7 @@
                 </tr>
                 <tr>
                     <td style="text-align: center">
-                        <asp:Image ID="Image1" runat="server" Height="165px" style="text-align: center" Width="314px" />
+                        <asp:Image ID="Image1" runat="server" Height="165px" style="text-align: center" Width="314px" ImageUrl='<%# Eval("YemekResim") %>' />
                     </td>
                 </tr>
                 <tr>

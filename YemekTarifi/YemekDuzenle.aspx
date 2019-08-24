@@ -33,6 +33,12 @@
             </td>
         </tr>
         <tr>
+            <td>Resim:</td>
+            <td>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
+            </td>
+        </tr>
+        <tr>
             <td>&nbsp;</td>
             <td>
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Güncelle" />
